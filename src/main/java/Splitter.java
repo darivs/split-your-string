@@ -12,7 +12,6 @@ public class Splitter {
             }
         }
 
-        System.out.println(output);
         return output.toString();
     }
 }
