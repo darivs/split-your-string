@@ -9,8 +9,12 @@ public class Splitter {
         while (index + breakpoint < output.length()) {
             if ((index = output.lastIndexOf(SPACE, index + breakpoint)) != -1) {
                 output.replace(index, index + 1, LINE_SEPARATOR);
+            } else if ((index = output.indexOf(SPACE, index + breakpoint)) != -1) {
+                output.replace(index, index + 1, LINE_SEPARATOR);
             }
         }
+
+        System.out.println(output.toString());
 
         return output.toString();
     }
