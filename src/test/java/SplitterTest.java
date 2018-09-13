@@ -18,7 +18,7 @@ public class SplitterTest {
         assertThat(occurrencesOfLinebreaks(output)).isEqualTo(expectedLinebreaks).isGreaterThan(0);
     }
 
-    private int occurrencesOfLinebreaks(String splittedText) {
-        return (splittedText.split(LINE_SEPARATOR, -1).length) - 1;
+    private int occurrencesOfLinebreaks(String brokenText) {
+        return (brokenText.split(LINE_SEPARATOR, -1).length) - 1;
     }
 }
